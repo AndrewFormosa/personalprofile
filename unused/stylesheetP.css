@@ -1,0 +1,225 @@
+html {
+  scroll-behavior: smooth;
+
+}
+
+body{
+    background:rgb(0, 0, 0);
+    margin:0px;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+
+
+h1{
+font-size: 5rem;
+font-weight: bold;
+}
+h2{
+margin:10px;
+font-size: 3rem;
+font-weight: bold;
+margin: 0vw 20vw 0vw 20vw;
+}
+h3{
+  font-size: 1.5rem;
+  font-weight:bold;
+  margin:10px;
+  margin: 0vw 20vw 0vw 20vw;
+}
+h4{
+  font-size: 1rem;
+  margin:10px;
+  color:rgb(255, 255, 255);
+}
+
+a{
+  color: white !important;
+  font-weight: bold;
+
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;background: rgb(0, 0, 0);}
+  10%{opacity: 1;background: rgb(74, 47, 133);}
+  100% {opacity: 0;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fade_in{
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-duration: 2s; 
+  animation-timing-function:linear;
+}
+
+@keyframes move_in_dimond {
+    0%   { background-position: 0% 50%;}
+    25% { background-position: 50% 100%;}
+    50% { background-position: 100% 50%;}
+    75% { background-position: 50% 0%;}
+    100%{ background-position: 0% 50%;}
+  }
+
+.full_page_element{
+  width: 100vw;
+  height: 100vh;
+  margin-left:0;
+}
+
+.centered_elements{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+ .dynamic_image1{ 
+  background-size: 3000px 3000px;
+  background-image:url('backImg3.png');
+  animation-name: move_in_dimond;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+  
+}
+
+.title1{
+  margin:10px;  font-weight:lighter;  
+  color:rgb(255, 255, 255);
+}
+
+.bottom_left_icons{
+  width:25%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  position:absolute;
+  bottom: 5%;
+  right:20%;
+  color:rgb(255, 255, 255);
+}
+
+span{
+  font-size: 4rem;
+}
+
+@keyframes move_up{
+  0%{translate: 0px 0px;scale:1;}
+  100%{translate: 0px -20px;scale:2;}
+}
+
+.an1{
+  scale:2;
+translate:0px -20px;
+animation-name: move_up;
+animation-duration: 2s;
+animation-iteration-count: 1;
+animation-timing-function: ease-in-out;
+transition-duration: 3s;
+transition-timing-function: ease-in-out;
+
+}
+
+.an1:hover{
+  translate:0px -30px;
+  scale:4;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+
+}
+
+
+@keyframes spin {
+  0%   { width: 0px;filter:brightness(0%)}
+  25% { width:200px;filter:brightness(100%)}
+  50% {width:0px;filter:brightness(0%)}
+  75% { width:200px;filter:brightness(0%)}
+  100%{width:0px;filter:brightness(0%)}
+
+}
+
+.profile_picture{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  accent-color: black;
+  border: solid rgb(255, 255, 255) 3px;
+  opacity: 1;
+
+
+  animation-name: spins;
+ animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+
+}
+
+.graphic_container{
+  padding: 0;
+  height:100vh;
+  background: grey;
+}
+
+.graphic_image{
+  margin:0;
+  height:100%;
+  width:100%;
+}
+
+.graphic_text{
+  overflow-x: hidden;
+  font-size: 6rem;
+  display:flex;
+  height:100%;
+  flex-direction: row;
+  align-items: center;
+  color:green;
+
+}
+
+#floating_text_1{
+ 
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  left:0;
+ font-size: 15rem;
+ opacity:0.5;
+  color:white;
+  transition: all 1s ease-out;
+}
+
+#scroll_effect_1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  translate: 0px 0px;
+  opacity:0;
+ font-size: 2rem;
+  color:rgb(182, 182, 182);
+  transition: all 2s ease-out;/* CRITICAL IMPORTANT FOR TRANSITION EFFECT TO WORK*/
+}
+
+.container{ /*This is the container that will determine the limits oustide of witch the element will be clipped*/   
+  position: relative;
+  top:75vh;
+ margin-top: -50vh;
+  width:100%; /*the limit of the ellements*/
+  white-space: nowrap; /*any children that are outside of the limits will be clipped*/
+  overflow-x: hidden; /*there will be no scroll allowed outside of these limits and the children will be clipped*/
+}
+.element {/*this element holds the content and defines the position*/
+width:2000%;
+}
+.content {
+ font-size: 20rem;
+}
+
+.expand_on_hover:hover{
+  scale:2;
+}

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .container { /*This is the container that will determine the limits oustide of witch the element will be clipped*/   
+        width:100%; /*the limit of the ellements*/
+        white-space: nowrap; /*any children that are outside of the limits will be clipped*/
+        overflow-x: hidden; /*there will be no scroll allowed outside of these limits and the children will be clipped*/
+      }
+      .element {/*this element holds the content and defines the position*/
+        position: relative;
+        left:-150px;
+        width:2000%;
+      }
+      .content {
+       font-size: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="element">
+        <div class="content">
+          This is a long text that will not wrap and will fall off the screen without creating a scrollbar.
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </body>
+</html>
