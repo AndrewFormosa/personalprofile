@@ -84,7 +84,7 @@ h1{
 .dynamic_image1{
   
         background-size: 3000px 3000px;
-        background-image:url('./images/sky.jpg');
+        background-image:url('./images/sky2.jpg');
         animation-name: move_in_dimond;
         animation-duration: 50s;
         animation-iteration-count: infinite;
