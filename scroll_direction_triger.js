@@ -7,7 +7,7 @@
    if (scrollPosition > lastScroll) {
      console.log("DOWN"); //on Scroll Down
      onScrollDown();
-   } else {
+   } else if(scrollPosition>0) {
      console.log("UP"); //on Scroll Up
      onScrollUp();
    }
