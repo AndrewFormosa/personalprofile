@@ -288,6 +288,7 @@ font-size: 0.8rem;
     .myProjects{
       flex-direction: column;
       align-content: center;
+      justify-content: center;
       vertical-align: middle;
       width:100%;
     }
