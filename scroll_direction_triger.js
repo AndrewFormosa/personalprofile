@@ -4,10 +4,10 @@
 
  $(window).on('scroll', function () {
    scrollPosition = $(window).scrollTop();
-   if (scrollPosition > lastScroll) {
+   if (scrollPosition > lastScroll && scrollPosition>0) {
      console.log("DOWN"); //on Scroll Down
      onScrollDown();
-   } else if(scrollPosition>0) {
+   } else{
      console.log("UP"); //on Scroll Up
      onScrollUp();
    }
