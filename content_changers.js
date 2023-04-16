@@ -4,7 +4,7 @@ let element=document.getElementById("changing_content_1");
 let count=0;
 let toggle=0;
 let texts=[
-    "Unity","C#",".Net 6", "SQL", "java script","PHP","BASH","Responsive Web-Site Design","Java-Script Algorithms","Data Structures,",
+    "Unity","C#",".Net 6", "SQL", "java script","PHP","BASH","Responsive Web-Site Design","Java-Script Algorithms","Data Structures",
 "Front end development libraries", "React & Redux","Data-visulisation & D3", "Relational Databases","Node.js","Express Server", "MongoDB and Mongoose", "Backend development and APIs"];
 setInterval(changeText, 3000);
 function changeText(){
