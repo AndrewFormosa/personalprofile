@@ -12,6 +12,8 @@ font-stretch: expanded;
 margin: 0px;
 }
 
+
+
 h1{
     color:rgb(255, 255, 255);
     margin:1.5rem 10vw 1.5rem 10vw;
@@ -23,6 +25,10 @@ h3{
 
 .row{
   width:100vw;
+}
+
+.description_container{
+  font-family: 'Alexandria', sans-serif;
 }
 
 .dark_background{
@@ -317,6 +323,13 @@ font-size: 0.8rem;
     height: 300px;
   }
 
+  h4{
+    font-size: 1rem;
+  }
+
+  .description_container{
+    font-size: 0.7rem;
+  }
 
 }
 
