@@ -18,7 +18,13 @@
         'Y_TriggerPosition':0.5,
         'newStyle':'margin:0rem 2rem 3rem 3rem;font-weight:800; opacity:1; font-family:"Alexandria", sans-serif;  translate: 0px 0px;opacity:1',
         'function':function() {}
-        }
+        },
+        {
+          'elementClass': 'scroll_effect_3',
+          'Y_TriggerPosition':0.9,
+          'newStyle':'translate:0px 0px; opacity:1; transition: all 2s ease-out;',
+          'function':function() {}
+        }  
       ]
   
   
