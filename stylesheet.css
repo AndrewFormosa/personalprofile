@@ -12,7 +12,37 @@ font-stretch: expanded;
 margin: 0px;
 }
 
+@keyframes fade-in-pannel {
+  0%{opacity: 1;background:black;}
+  50%{opacity: 1;background: navy;}
+  100%{opacity: 0;}
+}
 
+.fade-in-page{
+  opacity: 0;
+  position: absolute;
+  background: black;
+  left:0px;
+  right:0px;
+  width:100%;
+  height:100%;
+  z-index: 1;
+  animation: fade-in-pannel;
+  animation-duration: 5s;
+ animation-timing-function:linear; 
+}
+
+@keyframes fade-in-navbar {
+  0%{opacity: 0;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.navbar{
+  animation: fade-in-navbar;
+  animation-duration: 5s;
+ animation-timing-function:linear; 
+}
 
 h1{
     color:rgb(255, 255, 255);
@@ -112,6 +142,8 @@ h1{
     justify-content: center;
     text-align: center;
 }
+
+
 
 @keyframes spin {
     0%   { width: 0px;left:50%;filter:brightness(0%)}
