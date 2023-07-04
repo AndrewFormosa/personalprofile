@@ -89,6 +89,7 @@ display: flex;
 
 background: rgba(204, 204, 204, 0.5);
 margin: 1rem 0rem 1rem 0rem;
+border-radius: 2rem;
 }
 
 /*For sm*/
