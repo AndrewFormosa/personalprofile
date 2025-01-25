@@ -14,7 +14,7 @@ margin: 0px;
 
 @keyframes fade-in-pannel {
   0%{opacity: 1;background:black;}
-  50%{opacity: 1;background: navy;}
+  5%{opacity: 1;background: navy;}
   100%{opacity: 0;}
 }
 
@@ -34,7 +34,7 @@ margin: 0px;
 
 @keyframes fade-in-navbar {
   0%{opacity: 0;}
-  50%{opacity: 0;}
+  5%{opacity: 0;}
   100%{opacity: 1;}
 }
 
@@ -128,11 +128,11 @@ h1{
         animation-timing-function:ease-in-out;    
 }
 @keyframes move_in_dimond {
-    0%   { background-position: 0% 50%;}
-    25% { background-position: 50% 100%;}
-    50% { background-position: 100% 50%;}
-    75% { background-position: 50% 0%;}
-    100%{ background-position: 0% 50%;}
+    0%   { background-position: 0% 5%;}
+    25% { background-position: 5% 100%;}
+    5% { background-position: 100% 5%;}
+    75% { background-position: 5% 0%;}
+    100%{ background-position: 0% 5%;}
   }
 .centered_elements{
     display: flex;
@@ -147,17 +147,17 @@ h1{
 
 
 @keyframes spin {
-    0%   { width: 0px;left:50%;filter:brightness(0%)}
+    0%   { width: 0px;left:5%;filter:brightness(0%)}
     25% { width:200px;left:0%;filter:brightness(100%)}
-    50% {width:0px;left:50%;filter:brightness(0%)}
+    5% {width:0px;left:5%;filter:brightness(0%)}
     75% { width:200px;left:0%;filter:brightness(0%)}
-    100%{width:0px;left:50%;filter:brightness(0%)}
+    100%{width:0px;left:5%;filter:brightness(0%)}
   }
   
   .profile_picture{
     width:200px;
     height:200px;
-    border-radius: 50%;
+    border-radius: 5%;
     accent-color: black;
     border: solid rgb(255, 255, 255) 3px;
     opacity: 1;
@@ -217,7 +217,7 @@ h1{
 .selectable_container{
     width:100%;
     margin:60px 20px 40px 20px;
-    border-radius: 50%;
+    border-radius: 5%;
 
 }
 
@@ -225,7 +225,7 @@ h1{
 
 .selectable_image{
     position: absolute;
-    border-radius: 50%;
+    border-radius: 5%;
     border:solid rgb(72, 72, 255) 2px;
     box-shadow: 0px 0px 20px;
     transition: all 2s ease-in-out;
@@ -258,7 +258,7 @@ padding: 1rem;
 transition: all 1s ease-in-out;
 color:white;
 text-decoration: none;
-border-radius: 50%;
+border-radius: 5%;
 border:solid white 2px;
 font-size: 0.8rem;
 
@@ -271,7 +271,7 @@ font-size: 0.8rem;
     background: navy;
     opacity: 0.9;
     top: 80px;
-    border-radius: 2rem;
+    border-radius: 5%;
     height:230px
 
 }
@@ -294,7 +294,7 @@ font-size: 0.8rem;
   transition: all 1s ease-in-out;
   color:white;
   text-decoration: none;
-  border-radius: 50%;
+  border-radius: 5%;
   border:solid white 2px;
   font-size: 0.8rem;
   
@@ -308,7 +308,7 @@ font-size: 0.8rem;
       background: navy;
       opacity: 0.9;
       top: 50px;
-      border-radius: 2rem;
+      border-radius: 5%;
       height:200px
 
   }
